@@ -1,0 +1,16 @@
+- id: awards
+  translation: Награды
+- id: education
+  translation: Образование
+- id: experiences
+  translation: Опыт работы
+- id: information
+  translation: Информация
+- id: interests
+  translation: Интересы
+- id: languages
+  translation: Языки
+- id: projects
+  translation: Проекты
+- id: skills
+  translation: Навыки
