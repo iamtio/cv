@@ -9,10 +9,10 @@
 
 baseURL = "http://example.org/"
 defaultContentLanguage  = "ru"
-languageCode = "ru"
+# languageCode = "ru"
 title = ""
 theme = "hugo-devresume-theme"
-googleAnalytics = "UA-XXXXXXX-Y"
+# googleAnalytics = "UA-XXXXXXX-Y"
 
 [params]
     author = "iamtio"
@@ -22,11 +22,6 @@ googleAnalytics = "UA-XXXXXXX-Y"
     [params.footer]
         copyright = "iamtio"
 
-    [params.profile]
-        enable = true
-        name = "Царёв Игорь"
-        tagline = "DevOps/SRE engineer"
-        avatar = "photo.jpg"
     [params.contact]
         enable = true
         location = "Moscow, Russia"
@@ -46,15 +41,17 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.skills.list]]
         title = "Technical"
         [[params.skills.list.items]]
-        details = "JavaScript/Angular/React/Vue"
+        details = "Python/Django/DRF/Celery"
         [[params.skills.list.items]]
-        details = "Python/Ruby/PHP"
+        details = "Golang/Gin"
         [[params.skills.list.items]]
-        details = "Node.js/ASP.NET"
+        details = "JavaScript/React/CSS/SCSS"
         [[params.skills.list.items]]
-        details = "PostgreSQL/MySQL"
+        details = "PostgreSQL/Redis"
         [[params.skills.list.items]]
-        details = "Object-oriented design"
+        details = "System architect/Microservices/SOA"
+        [[params.skills.list.items]]
+        details = "Well experienced in Kubernetes/Docker"
         [[params.skills.list.items]]
         details = "Design and implement database structures"
         [[params.skills.list.items]]
@@ -71,55 +68,12 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.skills.list.items]]
         details = "Good time management"
 
-    [params.education]
-        enable = true
-
-        [[params.education.list]]
-        # degree = "Математическое обеспечение и адимнистрирование информационных систем"
-        degree = "Высшее"
-        university = "Московский финансово-промышленный университет \"Синергия\", Москва"
-        dates = "2008 - 2013"
-    [params.awards]
-        enable = false
-
-        [[params.awards.list]]
-        name = "Award Lorem Ipsum"
-        body = "Microsoft lorem ipsum"
-        date = "2019"
-        [[params.awards.list]]
-        name = "Award Donec Sodales"
-        body = "Oracle Aenean"
-        date = "2017"
-
-    [params.languages]
-        enable = true
-
-        [[params.languages.list]]
-        name = "Русский"
-        level = "Родной"
-        [[params.languages.list]]
-        name = "Английский"
-        level = "Срединй"
-
-    [params.interests]
-        enable = false
-
-        [[params.interests.list]]
-        name = "Climbing"
-        [[params.interests.list]]
-        name = "Snowboarding"
-        [[params.interests.list]]
-        name = "Photography"
-        [[params.interests.list]]
-        name = "Travelling"
-
     [params.summary]
         enable = true
         text = "Summarise your career here. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.  Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
 
     [params.experience]
         enable = true
-
 
         [[params.experience.list]]
         title = "Руководитель группы"
@@ -181,19 +135,17 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.projects.list]]
-        title = "Project Lorem Ipsum"
+        title = "OLED Gen"
         meta = "Open Source"
-        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-
+        tagline = '''
+        RAM/CPU usage real-time monitoring device. Arduino + 3D model for printing + PC side software (Golang)
+        '''
+        link = "https://github.com/iamtio/oledgen"
         [[params.projects.list]]
-        title = "Project Sed Fringilla"
+        title = "MQTT 2 Play"
         meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
-
-        [[params.projects.list]]
-        title = "Project Praesent"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+        tagline = '''Play sounds through MQTT (Golang)'''
+        link = "https://github.com/iamtio/mqtt2play"
 
     [params.information]
         enable = true
@@ -225,7 +177,62 @@ googleAnalytics = "UA-XXXXXXX-Y"
         url = "//stackoverflow.com/users/1980388/tio"
         title = "tio"
 
+[languages.ru.params]
+    [languages.ru.params.profile]
+        enable = true
+        tagline = "DevOps/SRE engineer, Software Developer"
+        avatar = "photo.jpg"
+        name = "Царёв Игорь"
+    [languages.ru.params.education]
+        enable = true
+        [[languages.ru.params.education.list]]
+        degree = "Математическое обеспечение и администрирование информационных систем (02.03.03)"
+        university = "Московский финансово-промышленный университет «Синергия»"
+        dates = "2008 - 2013"
+    [languages.ru.params.languages]
+        enable = true
+        [[languages.ru.params.languages.list]]
+        name = "Русский"
+        level = "Родной"
+        [[languages.ru.params.languages.list]]
+        name = "Английский"
+        level = "Срединй"
+    [languages.ru.params.interests]
+        enable = true
 
+        [[languages.ru.params.interests.list]]
+        name = "PC/VR гейминг"
+        [[languages.ru.params.interests.list]]
+        name = "Умный дом/интернет вещей"
+        [[languages.ru.params.interests.list]]
+        name = "Путешествия"
+[languages.en.params]
+    [languages.en.params.profile]
+        enable = true
+        tagline = "DevOps/SRE engineer, Software Developer"
+        avatar = "photo.jpg"    
+        name = "Igor Tsarev"
+    [languages.en.params.education]
+        enable = true
+        [[languages.en.params.education.list]]
+        degree = "B.Sc., Computer Science"
+        university = "Moscow University for Industry and Finance «Synergy»"
+        dates = "2008 - 2013"
+    [languages.en.params.languages]
+        enable = true
+        [[languages.en.params.languages.list]]
+        name = "Russian"
+        level = "Native"
+        [[languages.en.params.languages.list]]
+        name = "English"
+        level = "Intermediate"
 
+    [languages.en.params.interests]
+        enable = true
 
-
+        [[languages.en.params.interests.list]]
+        name = "PC/VR Gaming"
+        [[languages.en.params.interests.list]]
+        name = "SmartHome/IOT enthusiast"
+        [[languages.en.params.interests.list]]
+        name = "Travelling"

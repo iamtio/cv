@@ -1,0 +1,27 @@
+{{ if .IsTranslated }}
+<style>
+    .lang-swticher{
+        float: right
+    }
+</style>
+<div class="lang-swticher">
+  {{ range .Translations }}
+    <a href="{{ .Permalink }}">{{ .Lang }}</a>
+  {{ end }}
+</div>
+{{ end }}
+<div class="resume-header">
+
+    <div class="row align-items-center">
+
+        {{ if .Site.Params.profile.enable }}
+        {{ partial "profile.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.contact.enable }}
+        {{ partial "contact.html" . }}
+        {{ end }}
+
+    </div><!--//row-->
+
+</div><!--//resume-header-->
