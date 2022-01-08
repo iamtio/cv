@@ -65,8 +65,6 @@ theme = "hugo-devresume-theme"
         details = "Team player"
         [[params.skills.list.items]]
         details = "Strong problem solver"
-        [[params.skills.list.items]]
-        details = "Good time management"
 
     [params.summary]
         enable = true
@@ -76,15 +74,14 @@ theme = "hugo-devresume-theme"
         enable = true
 
         [[params.experience.list]]
+        company = "Самолет деволпмент"
         title = "Руководитель группы"
         dates = "01.2021 - настоящее время"
-        company = "Самолет деволпмент"
         details = "Выполнял обязанности руководителя DevOps инженеров, и Backend разработчиков в группе разработки сервисов"
         [[params.experience.list.items]]
         details = "Управление командой DevOps инженеров и разработчиков"
         [[params.experience.list.items]]
-        # SLA!
-        details = "Внедрение DevOps практик в компании"
+        details = "Коммуникации с сис. админам по вопросам развития инфруструктуры"
         [[params.experience.list.items]]
         details = "Применение Agile/Scrum/Kanban методологий"
         [[params.experience.list.items]]
@@ -92,44 +89,77 @@ theme = "hugo-devresume-theme"
         [[params.experience.list.items]]
         details = "Внедрение и интеграция программных продуктов компании"
         [[params.experience.list.items]]
-        details = "Развертывание и поддержка микросервисной архитектуры в платформе оркестрации - Kubernetes, Docker Swarm"
+        details = "Успешное внедрение Docker, Kubernetes, Gitlab, включая практики CI/CD"
         [[params.experience.list.items]]
-        details = "Настройка и сопровождение мониторинговых систем: Prometheus, Grafana, Alert Manager"
+        details = "Настройка Prometheus, Grafana, Alert Manager. Сбор метрик, создание дашбородов, правил алертинга"
         [[params.experience.list.items]]
         details = "Разработка микросервисов на Python/Go"
-        # [[params.experience.list]]
-        # title = "Lead Software Developer"
-        # dates = "2016 - 2019"
-        # company = "Apple"
-        # details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel."
-        # [[params.experience.list.items]]
-        # details = "Lorem ipsum dolor sit amet, consectetuer."
-        # [[params.experience.list.items]]
-        # details = "Aenean commodo ligula eget dolor."
+        
+        [[params.experience.list]]
+        company = "Самолет деволпмент"
+        title = "Ведущий разрабочик"
+        dates = "05.2019 - 01.2021"
+        details = "Fullstack разработка (Python/Django, JavaScript/ReactJS, Golang) и проектирование"
+        [[params.experience.list.items]]
+        details = "Разработка проектов автоматизации BIM"
+        [[params.experience.list.items]]
+        details = "Проектирование и разработка системных сервисов. Включая модуль SSO (Single Sign On)"
+        [[params.experience.list.items]]
+        details = "Успешно внедрил Apache Kafka, как событийную шину в компании"
+        [[params.experience.list.items]]
+        details = "Внедрение DevOps практик в компании"
 
-        # [[params.experience.list]]
-        # title = "Senior Software Developer"
-        # dates = "2014 - 2016"
-        # company = "Dropbox"
-        # details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        [[params.experience.list]]
+        company = "Поисковый портал Спутник"
+        title = "Старший разработчик направления"
+        dates = "09.2014 - 05.2019"
+        details = "Fullstack разработка (Python/Django, JavaScript/AngularJS)"
+        [[params.experience.list.items]]
+        details = "Запуск в эксплуатациюи доработка B2B системы IoT (Golang, PostgreSQL, GRPC, Kubernetes)"
+        [[params.experience.list.items]]
+        details = "Проектирование и разработка системы оценки качества поиска (Django, DRF, AngularJS, Celery)"
+        [[params.experience.list.items]]
+        details = "JS Плагин для FireFox для работы сотрудников (Bootstrap, AngularJS, Firefox SDK)"
+        [[params.experience.list.items]]
+        details = "Разработка системы голосования сотрудников (Django, DRF, AngularJS)"
+        [[params.experience.list.items]]
+        details = "Интеграция Django с HDFS, Hadoop, MapReduce задачами"
+        [[params.experience.list.items]]
+        details = "Разработка различных корпоративных админок(AngularJS, Django)"
 
-        # [[params.experience.list]]
-        # title = "Senior Developer"
-        # dates = "2013 - 2014"
-        # company = "Uber"
-        # details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
+        [[params.experience.list]]
+        company = "Интернет магизин VZV"
+        title = "Backend разработчик"
+        dates = "12.2013 - 09.2014"
+        details = "Perl, Python, PostgreSQL"
+        [[params.experience.list.items]]
+        details = "Внедрение подхода SPA (Single Page Application)"
+        [[params.experience.list.items]]
+        details = "Создание RESTFul API(Perl, Python)"
+        [[params.experience.list.items]]
+        details = "Автоматизация создания различных отчётов (xls, rtf, html)"
+        [[params.experience.list.items]]
+        details = "Внедрение GIT, Ansible"
+        [[params.experience.list.items]]
+        details = "Коммуникации с сис. админам"
+        [[params.experience.list.items]]
+        details = "Формирование, деплой релизов и их согласование с менеджментом"
+        [[params.experience.list.items]]
+        details = "Различные интеграции, включая 1С"
 
-        # [[params.experience.list]]
-        # title = "Backend Developer"
-        # dates = "2014 - 2016"
-        # company = "Amazon"
-        # details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-
-        # [[params.experience.list]]
-        # title = "Frontend Developer"
-        # dates = "2013 - 2014"
-        # company = "Startup"
-        # details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
+        [[params.experience.list]]
+        company = "SMS-Online"
+        title = "Backend разработчик"
+        dates = "12.2013 - 09.2014"
+        details = "Perl, Java, C"
+        [[params.experience.list.items]]
+        details = "Разработка мониторинга продуктовых метрик(Perl, Zabbix)"
+        [[params.experience.list.items]]
+        details = "Разработка ядра систмемы СМС-Шлюза(Perl, PostgreSQL, Redis)"
+        [[params.experience.list.items]]
+        details = "Интеграция платформы СМС-Шлаюза с API операторов (Perl, Java)"
+        [[params.experience.list.items]]
+        details = "Дежурство и оперативное решение проблем в продакшен-среде"
 
     [params.projects]
         enable = true
@@ -137,9 +167,7 @@ theme = "hugo-devresume-theme"
         [[params.projects.list]]
         title = "OLED Gen"
         meta = "Open Source"
-        tagline = '''
-        RAM/CPU usage real-time monitoring device. Arduino + 3D model for printing + PC side software (Golang)
-        '''
+        tagline = "RAM/CPU usage real-time monitoring device. Arduino + 3D model for printing + PC side software (Golang)"
         link = "https://github.com/iamtio/oledgen"
         [[params.projects.list]]
         title = "MQTT 2 Play"
