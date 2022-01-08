@@ -66,10 +66,6 @@ theme = "hugo-devresume-theme"
         [[params.skills.list.items]]
         details = "Strong problem solver"
 
-    [params.summary]
-        enable = true
-        text = "Summarise your career here. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.  Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
     [params.experience]
         enable = true
 
@@ -176,7 +172,7 @@ theme = "hugo-devresume-theme"
         link = "https://github.com/iamtio/mqtt2play"
 
     [params.information]
-        enable = true
+        enable = false
 
         [[params.information.list]]
         title = "Papers"
@@ -206,6 +202,15 @@ theme = "hugo-devresume-theme"
         title = "tio"
 
 [languages.ru.params]
+    [languages.ru.params.summary]
+        enable = true
+        text = """IT-специалист с богатым опытом, как в роли FullStack разработчика так и в роли инженера интеграции.
+         Являюсь активным сторонником OpenSource.
+         В своей работе делаю активный уклон в сторону применения современных практик: Agile, DevOps, infrastructure as Code.
+         Имею успешный опыт внедрения и эксплатации Kubernetes, релизных политик.
+         Нахожу общий язык с админами и QA
+        """
+
     [languages.ru.params.profile]
         enable = true
         tagline = "DevOps/SRE engineer, Software Developer"
@@ -227,7 +232,6 @@ theme = "hugo-devresume-theme"
         level = "Срединй"
     [languages.ru.params.interests]
         enable = true
-
         [[languages.ru.params.interests.list]]
         name = "PC/VR гейминг"
         [[languages.ru.params.interests.list]]
@@ -235,6 +239,15 @@ theme = "hugo-devresume-theme"
         [[languages.ru.params.interests.list]]
         name = "Путешествия"
 [languages.en.params]
+    [languages.en.params.summary]
+        enable = true
+        text = """
+         Well experienced IT-Engineer as FullStack developer and also software integration engineer.
+         Active OpenSource supporter/participant.
+         In my work I am paying attention to applying modern practicies, such as Agile, DevOps, Infrastructure as Code.
+         Having successful experience in introducting and using Kubernetes, software release policies.
+         Good in finding common grounds with Ops and QA
+        """
     [languages.en.params.profile]
         enable = true
         tagline = "DevOps/SRE engineer, Software Developer"
