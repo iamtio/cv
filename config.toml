@@ -49,6 +49,8 @@ theme = "hugo-devresume-theme"
         [[params.skills.list.items]]
         details = "PostgreSQL/Redis"
         [[params.skills.list.items]]
+        details = "Apache Kafka, RabbitMQ"
+        [[params.skills.list.items]]
         details = "System architect/Microservices/SOA"
         [[params.skills.list.items]]
         details = "Well experienced in Kubernetes/Docker"
@@ -65,97 +67,6 @@ theme = "hugo-devresume-theme"
         details = "Team player"
         [[params.skills.list.items]]
         details = "Strong problem solver"
-
-    [params.experience]
-        enable = true
-
-        [[params.experience.list]]
-        company = "Самолет деволпмент"
-        title = "Руководитель группы"
-        dates = "01.2021 - настоящее время"
-        details = "Выполнял обязанности руководителя DevOps инженеров, и Backend разработчиков в группе разработки сервисов"
-        [[params.experience.list.items]]
-        details = "Управление командой DevOps инженеров и разработчиков"
-        [[params.experience.list.items]]
-        details = "Коммуникации с сис. админам по вопросам развития инфруструктуры"
-        [[params.experience.list.items]]
-        details = "Применение Agile/Scrum/Kanban методологий"
-        [[params.experience.list.items]]
-        details = "Приоритезация задач и планирование"
-        [[params.experience.list.items]]
-        details = "Внедрение и интеграция программных продуктов компании"
-        [[params.experience.list.items]]
-        details = "Успешное внедрение Docker, Kubernetes, Gitlab, включая практики CI/CD"
-        [[params.experience.list.items]]
-        details = "Настройка Prometheus, Grafana, Alert Manager. Сбор метрик, создание дашбородов, правил алертинга"
-        [[params.experience.list.items]]
-        details = "Разработка микросервисов на Python/Go"
-        
-        [[params.experience.list]]
-        company = "Самолет деволпмент"
-        title = "Ведущий разрабочик"
-        dates = "05.2019 - 01.2021"
-        details = "Fullstack разработка (Python/Django, JavaScript/ReactJS, Golang) и проектирование"
-        [[params.experience.list.items]]
-        details = "Разработка проектов автоматизации BIM"
-        [[params.experience.list.items]]
-        details = "Проектирование и разработка системных сервисов. Включая модуль SSO (Single Sign On)"
-        [[params.experience.list.items]]
-        details = "Успешно внедрил Apache Kafka, как событийную шину в компании"
-        [[params.experience.list.items]]
-        details = "Внедрение DevOps практик в компании"
-
-        [[params.experience.list]]
-        company = "Поисковый портал Спутник"
-        title = "Старший разработчик направления"
-        dates = "09.2014 - 05.2019"
-        details = "Fullstack разработка (Python/Django, JavaScript/AngularJS)"
-        [[params.experience.list.items]]
-        details = "Запуск в эксплуатациюи доработка B2B системы IoT (Golang, PostgreSQL, GRPC, Kubernetes)"
-        [[params.experience.list.items]]
-        details = "Проектирование и разработка системы оценки качества поиска (Django, DRF, AngularJS, Celery)"
-        [[params.experience.list.items]]
-        details = "JS Плагин для FireFox для работы сотрудников (Bootstrap, AngularJS, Firefox SDK)"
-        [[params.experience.list.items]]
-        details = "Разработка системы голосования сотрудников (Django, DRF, AngularJS)"
-        [[params.experience.list.items]]
-        details = "Интеграция Django с HDFS, Hadoop, MapReduce задачами"
-        [[params.experience.list.items]]
-        details = "Разработка различных корпоративных админок(AngularJS, Django)"
-
-        [[params.experience.list]]
-        company = "Интернет магизин VZV"
-        title = "Backend разработчик"
-        dates = "12.2013 - 09.2014"
-        details = "Perl, Python, PostgreSQL"
-        [[params.experience.list.items]]
-        details = "Внедрение подхода SPA (Single Page Application)"
-        [[params.experience.list.items]]
-        details = "Создание RESTFul API(Perl, Python)"
-        [[params.experience.list.items]]
-        details = "Автоматизация создания различных отчётов (xls, rtf, html)"
-        [[params.experience.list.items]]
-        details = "Внедрение GIT, Ansible"
-        [[params.experience.list.items]]
-        details = "Коммуникации с сис. админам"
-        [[params.experience.list.items]]
-        details = "Формирование, деплой релизов и их согласование с менеджментом"
-        [[params.experience.list.items]]
-        details = "Различные интеграции, включая 1С"
-
-        [[params.experience.list]]
-        company = "SMS-Online"
-        title = "Backend разработчик"
-        dates = "12.2013 - 09.2014"
-        details = "Perl, Java, C"
-        [[params.experience.list.items]]
-        details = "Разработка мониторинга продуктовых метрик(Perl, Zabbix)"
-        [[params.experience.list.items]]
-        details = "Разработка ядра систмемы СМС-Шлюза(Perl, PostgreSQL, Redis)"
-        [[params.experience.list.items]]
-        details = "Интеграция платформы СМС-Шлаюза с API операторов (Perl, Java)"
-        [[params.experience.list.items]]
-        details = "Дежурство и оперативное решение проблем в продакшен-среде"
 
     [params.projects]
         enable = true
@@ -238,11 +149,100 @@ theme = "hugo-devresume-theme"
         name = "Умный дом/интернет вещей"
         [[languages.ru.params.interests.list]]
         name = "Путешествия"
+    [languages.ru.params.experience]
+        enable = true
+
+        [[languages.ru.params.experience.list]]
+        company = "Самолет девелопмент"
+        title = "Руководитель группы"
+        dates = "01.2021 - настоящее время"
+        details = "Выполнял обязанности руководителя DevOps инженеров, и Backend разработчиков в группе разработки сервисов"
+        [[languages.ru.params.experience.list.items]]
+        details = "Code Review, архитектурный надзор"
+        [[languages.ru.params.experience.list.items]]
+        details = "Коммуникации с сис. админам по вопросам развития инфруструктуры"
+        [[languages.ru.params.experience.list.items]]
+        details = "Применение Agile/Scrum/Kanban методологий"
+        [[languages.ru.params.experience.list.items]]
+        details = "Приоритезация задач и планирование"
+        [[languages.ru.params.experience.list.items]]
+        details = "Успешное внедрение Docker, Kubernetes, Gitlab, включая практики CI/CD"
+        [[languages.ru.params.experience.list.items]]
+        details = "Настройка Prometheus, Grafana, Alert Manager. Сбор метрик, создание дашбородов, правил алертинга"
+        [[languages.ru.params.experience.list.items]]
+        details = "Разработка микросервисов на Python/Go"
+        
+        [[languages.ru.params.experience.list]]
+        company = "Самолет деволпмент"
+        title = "Ведущий разрабочик"
+        dates = "05.2019 - 01.2021"
+        details = "Fullstack разработка (Python/Django, JavaScript/ReactJS, Golang) и проектирование"
+        [[languages.ru.params.experience.list.items]]
+        details = "Разработка проектов автоматизации BIM"
+        [[languages.ru.params.experience.list.items]]
+        details = "Проектирование и разработка системных сервисов. Включая модуль SSO (Single Sign On)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Успешно внедрил Apache Kafka, как событийную шину в компании"
+        [[languages.ru.params.experience.list.items]]
+        details = "Внедрение DevOps практик в компании"
+
+        [[languages.ru.params.experience.list]]
+        company = "Поисковый портал Спутник"
+        title = "Старший разработчик направления"
+        dates = "09.2014 - 05.2019"
+        details = "Fullstack разработка (Python/Django, JavaScript/AngularJS)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Запуск в эксплуатацию и доработка B2B системы IoT (Golang, PostgreSQL, GRPC, Kubernetes)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Проектирование и разработка системы оценки качества поиска (Django, DRF, AngularJS, Celery)"
+        [[languages.ru.params.experience.list.items]]
+        details = "JS Плагин для FireFox для работы сотрудников (Bootstrap, AngularJS, Firefox SDK)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Разработка системы голосования сотрудников (Django, DRF, AngularJS)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Интеграция Django с HDFS, Hadoop, MapReduce задачами"
+        [[languages.ru.params.experience.list.items]]
+        details = "Разработка различных корпоративных админок (AngularJS, Django)"
+
+        [[languages.ru.params.experience.list]]
+        company = "Интернет магизин VZV"
+        title = "Backend разработчик"
+        dates = "12.2013 - 09.2014"
+        details = "Perl, Python, PostgreSQL"
+        [[languages.ru.params.experience.list.items]]
+        details = "Внедрение подхода SPA (Single Page Application)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Создание RESTFul API(Perl, Python)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Автоматизация создания различных отчётов (xls, rtf, html)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Внедрение GIT, Ansible"
+        [[languages.ru.params.experience.list.items]]
+        details = "Коммуникации с сис. админам"
+        [[languages.ru.params.experience.list.items]]
+        details = "Формирование, деплой релизов и их согласование с менеджментом"
+        [[languages.ru.params.experience.list.items]]
+        details = "Различные интеграции, включая 1С"
+
+        [[languages.ru.params.experience.list]]
+        company = "SMS-Online"
+        title = "Backend разработчик"
+        dates = "12.2013 - 09.2014"
+        details = "Perl, Java, C"
+        [[languages.ru.params.experience.list.items]]
+        details = "Разработка мониторинга продуктовых метрик(Perl, Zabbix)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Разработка ядра систмемы СМС-Шлюза(Perl, PostgreSQL, Redis)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Интеграция платформы СМС-Шлаюза с API операторов (Perl, Java)"
+        [[languages.ru.params.experience.list.items]]
+        details = "Дежурство и оперативное решение проблем в продакшен-среде"
+        
 [languages.en.params]
     [languages.en.params.summary]
         enable = true
         text = """
-         Well experienced IT-Engineer as FullStack developer and also software integration engineer.
+         Well experienced IT-Engineer as a FullStack developer and also as a software integration engineer.
          Active OpenSource supporter/participant.
          In my work I am paying attention to applying modern practicies, such as Agile, DevOps, Infrastructure as Code.
          Having successful experience in introducting and using Kubernetes, software release policies.
@@ -277,3 +277,92 @@ theme = "hugo-devresume-theme"
         name = "SmartHome/IOT enthusiast"
         [[languages.en.params.interests.list]]
         name = "Travelling"
+    [languages.en.params.experience]
+        enable = true
+
+        [[languages.en.params.experience.list]]
+        company = "Samolet development"
+        title = "Team Lead"
+        dates = "01.2021 - now"
+        details = "Leading DevOps Engineers and Backend(Python) developers"
+        [[languages.en.params.experience.list.items]]
+        details = "Code Review, architecure supervising"
+        [[languages.en.params.experience.list.items]]
+        details = "Infrustucture improvements communication with Ops"
+        [[languages.en.params.experience.list.items]]
+        details = "Applying Agile/Kanban frameworks"
+        [[languages.en.params.experience.list.items]]
+        details = "Team planning and issues prioritization"
+        [[languages.en.params.experience.list.items]]
+        details = "Successfully applying Docker, Kubernetes, Gitlab in dev/staging/productions environments"
+        [[languages.en.params.experience.list.items]]
+        details = "Supporting of Prometheus, Grafana, Alert Manager. Metrics scraping, creating new dashboards, making alert rules"
+        [[languages.en.params.experience.list.items]]
+        details = "Developing microservices using Python/GoLang"
+        
+        [[languages.en.params.experience.list]]
+        company = "Samolet development"
+        title = "Senior Developer"
+        dates = "05.2019 - 01.2021"
+        details = "Fullstack development (Python/Django, JavaScript/ReactJS, Golang) and architecture design"
+        [[languages.en.params.experience.list.items]]
+        details = "Developing automation projects for BIM (Building Information Model)"
+        [[languages.en.params.experience.list.items]]
+        details = "Software design and developing of system services. Including SSO (Singe Sign On)"
+        [[languages.en.params.experience.list.items]]
+        details = "Successfully introduced Apache Kafka, as event-driven bus for whole company"
+        [[languages.en.params.experience.list.items]]
+        details = "Introducing DevOps practices into dev teams"
+
+        [[languages.en.params.experience.list]]
+        company = "Search portal Sputnik"
+        title = "Senior developer"
+        dates = "09.2014 - 05.2019"
+        details = "Fullstack development (Python/Django, JavaScript/AngularJS)"
+        [[languages.en.params.experience.list.items]]
+        # details = "Запуск в эксплуатацию и доработка B2B системы IoT (Golang, PostgreSQL, GRPC, Kubernetes)"
+        details = "Code revision and putting into operation B2B IoT platform (Golang, PostgreSQL, GRPC, Kubernetes)"
+        [[languages.en.params.experience.list.items]]
+        details = "Software design and developing of search quality scoring system (Django, DRF, AngularJS, Celery)"
+        [[languages.en.params.experience.list.items]]
+        details = "Developed corporate JavaScript Addon for Firefox for employees and partners (Bootstrap, AngularJS, Firefox SDK)"
+        [[languages.en.params.experience.list.items]]
+        details = "Developed corporate voting system for employees (Django, DRF, AngularJS)"
+        [[languages.en.params.experience.list.items]]
+        details = "Django integration with HDFS, Hadoop, MapReduce tasks"
+        [[languages.en.params.experience.list.items]]
+        details = "Developed a lot of various corporate admin dashbards (AngularJS, Django)"
+
+        [[languages.en.params.experience.list]]
+        company = "Internet shop VZV"
+        title = "Backend developer"
+        dates = "12.2013 - 09.2014"
+        details = "Perl, Python, PostgreSQL"
+        [[languages.en.params.experience.list.items]]
+        details = "Introducing and applying SPA (Single Page Application)"
+        [[languages.en.params.experience.list.items]]
+        details = "Creaing RESTFul APIs(Perl, Python) for frontend developers"
+        [[languages.en.params.experience.list.items]]
+        details = "Various reports automantion(xls, rtf, html)"
+        [[languages.en.params.experience.list.items]]
+        details = "Using of GIT, Ansible"
+        [[languages.en.params.experience.list.items]]
+        details = "Ops (Infrstructure) communication"
+        [[languages.en.params.experience.list.items]]
+        details = "Software releases coordination and deployment"
+        [[languages.en.params.experience.list.items]]
+        details = "Various integrations, including 1C:Enterprise"
+
+        [[languages.en.params.experience.list]]
+        company = "SMS-Online"
+        title = "Backend developer"
+        dates = "12.2013 - 09.2014"
+        details = "Perl, Java, C"
+        [[languages.en.params.experience.list.items]]
+        details = "Creation of bussiness monitoring rules(Perl, Zabbix)"
+        [[languages.en.params.experience.list.items]]
+        details = "SMS-Gate core developing(Perl, PostgreSQL, Redis)"
+        [[languages.en.params.experience.list.items]]
+        details = "SMS-Gate integrations with mobile network operators (Perl, Java)"
+        [[languages.en.params.experience.list.items]]
+        details = "Regular duties and hotfixing issues in production environment" # !!!
