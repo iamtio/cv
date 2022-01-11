@@ -7,13 +7,14 @@
 
 # Page settings
 
-baseURL = "http://example.org/"
+baseURL = "https://iamtio.github.io/cv/"
+# baseURL = "http://example.org/"
 defaultContentLanguage  = "ru"
 # languageCode = "ru"
 title = ""
 theme = "hugo-devresume-theme"
+enableRobotsTXT  = true
 # googleAnalytics = "UA-XXXXXXX-Y"
-
 [params]
     author = "iamtio"
     description = "DevResume"
