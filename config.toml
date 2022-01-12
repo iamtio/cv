@@ -1,17 +1,7 @@
-# baseURL = 'http://example.org/'
-# languageCode = 'en-us'
-# title = 'My New Hugo Site'
-# theme = 'hugo-devresume-theme'
-# [params.footer]
-#     copyright = ""
-
-# Page settings
-
 baseURL = "https://iamtio.github.io/cv/"
-# baseURL = "http://example.org/"
 defaultContentLanguage  = "ru"
-# languageCode = "ru"
-title = ""
+title = "Igor Tsarev CV"
+# theme = ""
 theme = "hugo-devresume-theme"
 enableRobotsTXT  = true
 # googleAnalytics = "UA-XXXXXXX-Y"
