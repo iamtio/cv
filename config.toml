@@ -1,5 +1,5 @@
 baseURL = "https://iamtio.github.io/cv/"
-defaultContentLanguage  = "ru"
+defaultContentLanguage  = "en"
 title = "Igor Tsarev CV"
 # theme = ""
 theme = "hugo-devresume-theme"
@@ -15,12 +15,12 @@ enableRobotsTXT  = true
 
     [params.contact]
         enable = true
-        location = "Moscow, Russia"
+        location = "Espoo, Finland"
 
-        [[params.contact.list]]
-        icon = "fas fa-phone-square"
-        url = "tel:+79999735058"
-        text = "+7 999 973 50 58"
+        # [[params.contact.list]]
+        # icon = "fas fa-phone-square"
+        # url = "tel:+79999735058"
+        # text = "+7 999 973 50 58"
 
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
@@ -34,9 +34,11 @@ enableRobotsTXT  = true
         [[params.skills.list.items]]
         details = "Python/Django/DRF/Celery"
         [[params.skills.list.items]]
-        details = "Golang/Gin"
+        details = "Rust"
         [[params.skills.list.items]]
         details = "JavaScript/React/CSS/SCSS"
+        [[params.skills.list.items]]
+        details = "Golang/Gin"
         [[params.skills.list.items]]
         details = "PostgreSQL/Redis"
         [[params.skills.list.items]]
@@ -61,16 +63,25 @@ enableRobotsTXT  = true
 
     [params.projects]
         enable = true
-
+        [[params.projects.list]]
+        title = "TRAWM"
+        meta = "Rust, Embedded, BLE"
+        tagline = "Firmware for RaspberryPi Pico 2040W with E-ink screen for displaying air quality metrics gathered from Airthings through Bluetooth LE"
+        link = "https://github.com/iamtio/trawm"
+        [[params.projects.list]]
+        title = "GoRadex"
+        meta = "Golang, Reverse enginering"
+        tagline = "CLI tool for Quarta Radex One personal dosimeter"
+        link = "https://github.com/iamtio/goradex"
         [[params.projects.list]]
         title = "OLED Gen"
-        meta = "Open Source"
-        tagline = "RAM/CPU usage real-time monitoring device. Arduino + 3D model for printing + PC side software (Golang)"
+        meta = "Golang, Arduino"
+        tagline = "RAM/CPU usage real-time monitoring device. Arduino + 3D model for printing + PC side software"
         link = "https://github.com/iamtio/oledgen"
         [[params.projects.list]]
         title = "MQTT 2 Play"
-        meta = "Open Source"
-        tagline = '''Play sounds through MQTT (Golang)'''
+        meta = "Golang, Smart home"
+        tagline = '''Play sounds through MQTT'''
         link = "https://github.com/iamtio/mqtt2play"
 
     [params.information]
@@ -146,7 +157,7 @@ enableRobotsTXT  = true
         [[languages.ru.params.experience.list]]
         company = "Самолет девелопмент"
         title = "Руководитель группы"
-        dates = "01.2021 - настоящее время"
+        dates = "01.2021 - 05.2022"
         details = "Выполнял обязанности руководителя DevOps инженеров, и Backend разработчиков в группе разработки сервисов"
         [[languages.ru.params.experience.list.items]]
         details = "Code Review, архитектурный надзор"
@@ -164,7 +175,7 @@ enableRobotsTXT  = true
         details = "Разработка микросервисов на Python/Go"
         
         [[languages.ru.params.experience.list]]
-        company = "Самолет деволпмент"
+        company = "Самолет девелопмент"
         title = "Ведущий разрабочик"
         dates = "05.2019 - 01.2021"
         details = "Fullstack разработка (Python/Django, JavaScript/ReactJS, Golang) и проектирование"
@@ -274,7 +285,7 @@ enableRobotsTXT  = true
         [[languages.en.params.experience.list]]
         company = "Samolet development"
         title = "Team Lead"
-        dates = "01.2021 - now"
+        dates = "01.2021 - 05.2022"
         details = "Leading DevOps Engineers and Backend(Python) developers"
         [[languages.en.params.experience.list.items]]
         details = "Code Review, architecure supervising"
@@ -311,7 +322,6 @@ enableRobotsTXT  = true
         dates = "09.2014 - 05.2019"
         details = "Fullstack development (Python/Django, JavaScript/AngularJS)"
         [[languages.en.params.experience.list.items]]
-        # details = "Запуск в эксплуатацию и доработка B2B системы IoT (Golang, PostgreSQL, GRPC, Kubernetes)"
         details = "Code revision and putting into operation B2B IoT platform (Golang, PostgreSQL, GRPC, Kubernetes)"
         [[languages.en.params.experience.list.items]]
         details = "Software design and developing of search quality scoring system (Django, DRF, AngularJS, Celery)"
